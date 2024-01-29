@@ -5,14 +5,16 @@ class student
 {
     public:
     const int aF;
-    student (int x)
-    : aF(x)
+    const int eF;
+    student (int x, int y)
+    : aF(x), eF(y)
     {
-        cout<<aF<<endl;
+        cout<<"Admission Fee: "<<aF<<endl;
+        cout<<"Exam Fee: "<<eF<<endl;
     }
 };
 
 int main()
 {
-    student s1(20000);
+    student s1(20000, 400);
 }
